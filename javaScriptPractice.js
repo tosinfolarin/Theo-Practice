@@ -1,16 +1,31 @@
-// This sets the value of Kelvin to 293
-const Kelvin = 0
+// JavaScript Challenges
 
-// this caclulates the value of kelvin by subtracting 273 from it
-const celsius = Kelvin - 273
+// Write a function that takes a string and returns it reversed.
 
-// this assigns celcius to farenheit
-let farenheit = celsius * (9/5) + 32
+// Sum All Numbers in an Array
 
-// this roudns the farenheit to a whole number
-farenheit = Math.floor(farenheit)
+// Find the Maximum Number in an Array
 
-console.log(`The temperature is ${farenheit} degrees Fahrenheit.`)
+// Find the Longest Word in a String
 
-const Newton = Math.floor(celsius * (33/100))
-console.log(Newton)
+// Count Vowels in a String
+
+// Check for Palindrome
+// Example: "madam" = true
+
+/* Print numbers from 1 to 100. For multiples of 3, print "Fizz", 
+for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
+
+// Remove Duplicates from an Array
+// Example: [1, 2, 2, 3, 4, 4] → [1, 2, 3, 4]
+
+/* Write a function to flatten an array with nested arrays.
+ Example: [1, [2, [3, 4], 5]] → [1, 2, 3, 4, 5] */
+
+
+//  Given a string, return an object mapping each character to how many times it appears.
+//  Example: "banana" → { b: 1, a: 3, n: 2 }
+
+
+// Implement a debounce utility that delays calling a function until after a certain time has passed.
+
