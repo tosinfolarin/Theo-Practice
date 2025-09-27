@@ -1,8 +1,25 @@
 // JavaScript Challenges
 
 // Write a function that takes a string and returns it reversed.
+function reverseSting(str){
+    let revStr = ''
+    for(let i = str.length - 1; i >= 0 ; i--){
+        revStr += [i]
+    }
+    return revStr
+}
 
 // Sum All Numbers in an Array
+
+function sumArray(numArray){
+    let sumOfArray = 0
+    for (let i = 0; i < numArray.length; i++){
+        sumOfArray += numArray[i]
+    }
+    return sumOfArray
+}
+
+
 
 // Find the Maximum Number in an Array
 
@@ -21,7 +38,6 @@ for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 
 /* Write a function to flatten an array with nested arrays.
  Example: [1, [2, [3, 4], 5]] → [1, 2, 3, 4, 5] */
-
 
 //  Given a string, return an object mapping each character to how many times it appears.
 //  Example: "banana" → { b: 1, a: 3, n: 2 }
