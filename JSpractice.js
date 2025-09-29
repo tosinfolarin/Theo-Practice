@@ -89,28 +89,52 @@ const { count } = require("console")
 /* Print numbers from 1 to 15. For multiples of 3, print "Fizz", 
 for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 
-function fizzBuzz() {
-    for (let i = 1; i <= 15; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log('FizzBuzz'); // divisible by both
-        } else if (i % 3 === 0) {
-            console.log('Fizz'); // divisible by 3
-        } else if (i % 5 === 0) {
-            console.log('Buzz'); // divisible by 5
-        } else {
-            console.log(i); // not divisible by 3 or 5
-        }
-    }}
-fizzBuzz()
-// Remove Duplicates from an Array
-// Example: [1, 2, 2, 3, 4, 4] → [1, 2, 3, 4]
+// function fizzBuzz() {
+//     for (let i = 1; i <= 15; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log('FizzBuzz'); // divisible by both
+//         } else if (i % 3 === 0) {
+//             console.log('Fizz'); // divisible by 3
+//         } else if (i % 5 === 0) {
+//             console.log('Buzz'); // divisible by 5
+//         } else {
+//             console.log(i); // not divisible by 3 or 5
+//         }
+//     }}
+// fizzBuzz()
 
-/* Write a function to flatten an array with nested arrays.
- Example: [1, [2, [3, 4], 5]] → [1, 2, 3, 4, 5] */
+// Remove Duplicates from an Array
+let arrayWdups = [1, 2, 2, 3, 4, 4];
+function removeDups(arr) {
+    let noDupsArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!noDupsArr.includes(arr[i])) {
+            noDupsArr.push(arr[i]);
+        }
+    }
+    return noDupsArr;
+}
+
+console.log(removeDups(arrayWdups));
+
 
 //  Given a string, return an object mapping each character to how many times it appears.
 //  Example: "banana" → { b: 1, a: 3, n: 2 }
 
-
-// Implement a debounce utility that delays calling a function until after a certain time has passed.
+let stringToCount = 'Count this string';
+function countString(str) {
+    let stringObj = {};
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i]; // current character
+        // If the character already exists in the object, increment it
+        if (stringObj[char]) {
+            stringObj[char]++;
+        } else {
+            // Otherwise, initialize it with 1
+            stringObj[char] = 1;
+        }
+    }
+    return stringObj;
+}
+console.log(countString(stringToCount));
 
