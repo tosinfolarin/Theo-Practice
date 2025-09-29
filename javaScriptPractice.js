@@ -18,8 +18,7 @@ function sumArray(numArray){
     }
     return sumOfArray
 }
-
-
+ 
 
 // Find the Maximum Number in an Array
 
