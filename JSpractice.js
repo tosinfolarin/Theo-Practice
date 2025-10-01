@@ -1,47 +1,49 @@
 // JavaScript Challenges
 
-const { count } = require("console")
+const { machine } = require("os")
+
 
 // Write a function that takes a string and returns it reversed.
-
-// let str = 'hello world'
-// function reverseSting(str){
+// let str = 'testing'
+// function revStr(str){
 //     let newStr = str.split('').reverse().join('')
 //     return newStr
 // }
-// console.log(reverseSting(str))
+// console.log(revStr(str))
+
+
 
 // Sum All Numbers in an Array
-// let numArray = [2,4,5]
+// let numArray = [2,22,5]
 // function sumArray(numArray){
-//     let sumOfArray = 0
-//     for (let i = 0; i < numArray.length; i++){
-//         sumOfArray += numArray[i]
+//     let counter = 0
+//     for(let i = 0; i < numArray.length; i++){
+//         counter += numArray[i]
 //     }
-//     return sumOfArray
+//     return counter
 // }
 // console.log(sumArray(numArray))
 
+
+
 // Find the Maximum Number in an Array
-// let numArr = [10, 13, 23, 453, 56, 34, 5, 23, 1, 29]
+// let numArr = [10, 13, 23, 34, 56, 34, 5, 23, 99, 29]
 // function maxNum(numArr){
-//     maximumNum = 0
-//     for (let i = 0; i < numArr.length; i++ ){ 
-//         if (numArr[i] > maximumNum){
-//             maximumNum = numArr[i]
+//     let maxNum = 0
+//     for (let i = 0; i < numArr.length; i++){
+//         if(numArr[i] > maxNum){
+//             maxNum = numArr[i]
 //         }
 //     }
-//     return maximumNum
-//     }
+//     return maxNum
+// }
 // console.log(maxNum(numArr))
 
 
 
-
- // Find the Longest Word in a String
+// Find the Longest Word in a String
 // const longString = 'This is a string where i will find the longest word';
-
-// function findLongWord(longString) {
+// function findLongWord(longString){
 //     let words = longString.split(' ');
 //     let longestWord = '';
 //     for (let i = 0; i < words.length; i++) {
@@ -49,7 +51,6 @@ const { count } = require("console")
 //             longestWord = words[i];
 //         }
 //     }
-
 //     return longestWord;
 // }
 // console.log(findLongWord(longString));
@@ -104,37 +105,36 @@ for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 // fizzBuzz()
 
 // Remove Duplicates from an Array
-let arrayWdups = [1, 2, 2, 3, 4, 4];
-function removeDups(arr) {
-    let noDupsArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (!noDupsArr.includes(arr[i])) {
-            noDupsArr.push(arr[i]);
-        }
-    }
-    return noDupsArr;
-}
+// let arrayWdups = [1, 2, 2, 3, 4, 4];
+// function removeDups(arr) {
+//     let noDupsArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!noDupsArr.includes(arr[i])) {
+//             noDupsArr.push(arr[i]);
+//         }
+//     }
+//     return noDupsArr;
+// }
 
-console.log(removeDups(arrayWdups));
+// console.log(removeDups(arrayWdups));
 
 
 //  Given a string, return an object mapping each character to how many times it appears.
 //  Example: "banana" → { b: 1, a: 3, n: 2 }
 
-let stringToCount = 'Count this string';
-function countString(str) {
-    let stringObj = {};
-    for (let i = 0; i < str.length; i++) {
-        let char = str[i]; // current character
-        // If the character already exists in the object, increment it
-        if (stringObj[char]) {
-            stringObj[char]++;
-        } else {
-            // Otherwise, initialize it with 1
-            stringObj[char] = 1;
-        }
-    }
-    return stringObj;
-}
-console.log(countString(stringToCount));
-
+// let stringToCount = 'Count this string';
+// function countString(str) {
+//     let stringObj = {};
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i]; // current character
+//         // If the character already exists in the object, increment it
+//         if (stringObj[char]) {
+//             stringObj[char]++;
+//         } else {
+//             // Otherwise, initialize it with 1
+//             stringObj[char] = 1;
+//         }
+//     }
+//     return stringObj;
+// }
+// console.log(countString(stringToCount));
