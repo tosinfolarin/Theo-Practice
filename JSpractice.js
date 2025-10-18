@@ -190,23 +190,16 @@ for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 // Example:
 // maxNumber([4, 9, 1, 17, 3]) → 17
 
-// intialise a value of the first number of the array
-// run a loop of the length of the array
-// check if each value is bigger than the initialised value, if it is, biggest num = that value
-// continue checking
-
-
-
-function largestNum(numArr){
-    let biggestNum = numArr[0]
-    for(let i = 0; i <= numArr.length; i++){
-        if (numArr[i] > biggestNum){
-            biggestNum = numArr[i]
-        }
-    }
-    console.log(biggestNum)
-}
-largestNum([1, 1, 10, 22, 1, -1, -10])
+// function largestNum(numArr){
+//     let biggestNum = numArr[0]
+//     for(let i = 0; i <= numArr.length; i++){
+//         if (numArr[i] > biggestNum){
+//             biggestNum = numArr[i]
+//         }
+//     }
+//     console.log(biggestNum)
+// }
+// largestNum([1, 1, 10, 22, 1, -1, -10])
 
 
 
