@@ -138,3 +138,125 @@ for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 //     return stringObj;
 // }
 // console.log(countString(stringToCount));
+
+
+// 🧠 1. FizzBuzz
+// Problem:
+// Write a function that prints the numbers from 1 to 15. 
+// But for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". 
+// For numbers that are multiples of both 3 and 5, print "FizzBuzz".
+
+// function fizzBuzz(){
+//     for (let counter = 1; counter < 16; counter++){
+//         if (counter % 3 == 0 && counter % 5 == 0){
+//             console.log('FizzBuzz')
+//         } else if(counter % 3 == 0 ){
+//             console.log ('Fizz')
+//         } else if (counter % 5 == 0) {
+//             console.log('Buzz')
+//         } else (
+//         console.log(counter))
+//     }
+// }
+// fizzBuzz()
+
+
+// 🔤 2. Reverse a String
+// Problem:
+// Write a function reverseString(str) that returns the reverse of a given string.
+// Example:
+// reverseString("hello") → "olleh"
+
+
+// // get the length of the string in index
+// let index = [str.length - 1]
+// // loop through the length of the string gradually reducing the index until index is 0
+// for (let i = str.length - 1; i > 0; reverseString.push(i))
+// // push each value to RevString
+
+// function reverseString(str){
+//     let revString = ''
+//     for (let i = str.length - 1; i >= 0; i--){
+//         revString += (str[i])
+//     }
+//     console.log(revString)
+// }
+// reverseString('hello')
+
+
+// 📦 3. Find the Largest Number in an Array
+// Problem:
+// Write a function that takes an array of numbers and returns the largest one.
+// Example:
+// maxNumber([4, 9, 1, 17, 3]) → 17
+
+// intialise a value of the first number of the array
+// run a loop of the length of the array
+// check if each value is bigger than the initialised value, if it is, biggest num = that value
+// continue checking
+
+
+
+function largestNum(numArr){
+    let biggestNum = numArr[0]
+    for(let i = 0; i <= numArr.length; i++){
+        if (numArr[i] > biggestNum){
+            biggestNum = numArr[i]
+        }
+    }
+    console.log(biggestNum)
+}
+largestNum([1, 1, 10, 22, 1, -1, -10])
+
+
+
+
+// 🔄 4. Remove Duplicates from an Array
+// Problem:
+// Write a function that removes duplicate values from an array.
+// Example:
+// removeDuplicates([1, 2, 2, 3, 4, 4]) → [1, 2, 3, 4]
+
+
+// 🔢 5. Check for Palindrome
+// Problem:
+// Write a function that checks if a string is a palindrome (reads the same forwards and backwards).
+// Example:
+// isPalindrome("racecar") → true
+// isPalindrome("hello") → false
+
+
+// 📅 6. Factorial of a Number
+// Problem:
+// Write a function to find the factorial of a given number.
+// Example:
+// factorial(5) → 120 (because 5 × 4 × 3 × 2 × 1 = 120)
+
+
+// 🧮 7. Count the Number of Vowels in a String
+// Problem:
+// Write a function that counts how many vowels (a, e, i, o, u) are in a string.
+// Example:
+// countVowels("Javascript") → 3
+
+
+// 📝 8. Title Case a Sentence
+// Problem:
+// Write a function that takes a sentence and returns it with the first letter of each word capitalized.
+// Example:
+// titleCase("the quick brown fox") → "The Quick Brown Fox"
+
+
+// 🧮 9. Sum of Numbers in an Array
+// Problem:
+// Write a function that returns the sum of all numbers in an array.
+// Example:
+// sumArray([1, 2, 3, 4]) → 10
+
+
+// 🔍 10. Find the Index of an Element
+// Problem:
+// Write a function that returns the index of a given value in an array. If the value does not exist, return -1.
+// Example:
+// findIndex([10, 20, 30], 20) → 1
+// findIndex([10, 20, 30], 50) → -1
