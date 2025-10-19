@@ -203,12 +203,30 @@ for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 
 
 
-
 // 🔄 4. Remove Duplicates from an Array
 // Problem:
 // Write a function that removes duplicate values from an array.
 // Example:
 // removeDuplicates([1, 2, 2, 3, 4, 4]) → [1, 2, 3, 4]
+
+// function removeDuplicates(numArr) {
+//     let newArr = [];
+//     for (let i = 0; i < numArr.length; i++) {
+//         let isDuplicate = false;
+//         for (let j = 0; j < newArr.length; j++) {
+//             if (numArr[i] === newArr[j]) {
+//                 isDuplicate = true;
+//                 break;
+//             }
+//         }
+//         if (!isDuplicate) {
+//             newArr.push(numArr[i]);
+//         }
+//     }
+
+//     console.log(newArr);
+// }
+// removeDuplicates([2,2,3,6,7,7,6,44,5,6,6,5])
 
 
 // 🔢 5. Check for Palindrome
