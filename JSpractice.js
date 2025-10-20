@@ -1,8 +1,5 @@
 // JavaScript Challenges
 
-const { machine } = require("os")
-
-
 // Write a function that takes a string and returns it reversed.
 // let str = 'testing'
 // function revStr(str){
@@ -236,6 +233,20 @@ for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 // isPalindrome("racecar") → true
 // isPalindrome("hello") → false
 
+// function checkPalindrome(str){
+//     let str1 = ''
+//     for(let i = str.length - 1; i >= 0; i--){
+//         str1 += str[i]
+//     }
+//     if (str1 === str){
+//         console.log('its a palindrome')
+//     } else {
+//         console.log('its not a palindrome')
+//     }
+// }
+// checkPalindrome('racecar')
+
+
 
 // 📅 6. Factorial of a Number
 // Problem:
@@ -243,12 +254,32 @@ for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 // Example:
 // factorial(5) → 120 (because 5 × 4 × 3 × 2 × 1 = 120)
 
+// function findFactorial(num){
+//     let counter = 1
+//     for (let i = 1; i <= num; i++){
+//        counter *= i
+//     }
+//     console.log(counter)
+// }
+// findFactorial(5)
+
 
 // 🧮 7. Count the Number of Vowels in a String
 // Problem:
 // Write a function that counts how many vowels (a, e, i, o, u) are in a string.
 // Example:
 // countVowels("Javascript") → 3
+
+// function countVowels(str){
+//     let counter = 0
+//     for (let i = 0; i < str.length; i++){
+//         if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i'|| str[i] == 'o'|| str[i] == 'u'){
+//             counter++
+//         }
+//     }
+//     console.log(counter)
+// }
+// countVowels('Javascript')
 
 
 // 📝 8. Title Case a Sentence
@@ -264,6 +295,15 @@ for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 // Example:
 // sumArray([1, 2, 3, 4]) → 10
 
+// function addNumsInArray(arr){
+//     let counter = 0
+//     for (let i = 0; i < arr.length; i++){
+//         counter += arr[i]
+//     }
+//     console.log(counter)
+// }
+// addNumsInArray([1, 2, 3, 4])
+
 
 // 🔍 10. Find the Index of an Element
 // Problem:
@@ -271,3 +311,14 @@ for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz". */
 // Example:
 // findIndex([10, 20, 30], 20) → 1
 // findIndex([10, 20, 30], 50) → -1
+
+function findIndex(numArr, num){
+    for (let i = 0; i < numArr.length; i++){
+        if (num == numArr[i]){
+            console.log('index is:', i)
+            return;
+        }
+    }
+    console.log('-1')
+}
+findIndex([10, 20, 30], 10)
